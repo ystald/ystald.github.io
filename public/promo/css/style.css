@@ -1,0 +1,672 @@
+a.spoiler:after {
+    content: " [-]"
+}
+
+a.spoiler.collapsed:after {
+    content: " [+]"    
+}
+.nav-tabs {
+    margin-bottom: 15px;
+}
+
+.breadcrumb > li + li:before {
+    content: "\f105";
+    font-family: 'FontAwesome';
+}
+
+@font-face {
+			font-family: "ProximaNovaRegular";
+			src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot");
+			src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
+			url("../fonts/ProximaNovaRegular/ProximaNovaRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
+
+	@font-face {
+			font-family: "ProximaNovaBold";
+			src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot");
+			src: url("../fonts/ProximaNovaBold/ProximaNovaBold.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/ProximaNovaBold/ProximaNovaBold.woff") format("woff"),
+			url("../fonts/ProximaNovaBold/ProximaNovaBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+	font-family: "ProximaNovaRegular";
+}
+
+
+/*Шапка сайта*/ 
+
+.header {
+	height: auto;
+}
+
+.logo {
+	float: left;
+	padding: 16px 0px 15px 15px;
+	display: inline-block;
+}
+
+.contacts {
+	font-size: 15px;
+	line-height: 30px;
+	text-transform: uppercase;
+    padding: 45px 0px 35px 25px;
+	text-align: right;
+	display: inline-block;
+	float: right;
+}
+
+.contacts p {
+	font-size: 23px;
+}
+
+.contacts b {
+	color: #ce3b35;
+}
+
+.fa-phone {
+	color: #ce3b35;
+	font-size: 20px;
+}
+
+/*Первый экран*/
+
+.first-section {
+	background: url(../images/background.jpg) no-repeat center;
+	background-size: cover;
+	padding: 130px 0px;
+}
+
+.first-section img {
+	max-width: 100%;
+}
+
+.mercury {
+	padding-left: 0px;
+}
+
+/*Кому*/
+
+.caption {
+	font-size: 40px;
+	text-transform: uppercase;
+    font-family: "ProximaNovaBold";
+	border-left: 6px solid #ce3b35;
+	height: auto;
+	padding-left: 11px;
+	margin: 60px 0px;
+}
+
+.who-calumn {
+	padding-left: 0px;
+}
+
+.who-calumn-img {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.who-calumn-img  img {
+	max-width: 85%;
+}
+
+.who-calumn p {
+	font-size: 18px;
+	display: inline-block;
+	margin-bottom: 0px;
+	padding-left: 6px;
+}
+
+/*Когда, Подключение*/
+
+.service img {
+	max-width: 100%;
+	border: solid 2.5px #ce3b35;
+}
+
+.caption-service {
+	font-size: 40px;
+	text-transform: uppercase;
+    font-family: "ProximaNovaBold";
+	border-left: 6px solid #ce3b35;
+	height: auto;
+	padding-left: 11px;
+    margin-bottom: 40px;
+}
+
+.service p {
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.vcenter {
+    vertical-align: middle;
+    float: none;
+	display: table-cell;
+}
+
+.when {
+	margin-bottom: 60px;
+}
+
+.service strong {
+	color: #ce3b35;;
+}
+
+.service a {
+	text-decoration: underline;
+	color: #000000;
+}
+
+.service a:hover {
+	color: #ce3b35;
+}
+
+/*Штрафы*/
+
+.first-hr {
+	margin-bottom: 0px;
+}
+
+ul li,
+ol li {
+  list-style: none;
+}
+
+ol li {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #ce3b35;
+  padding: 13px 17px;
+  font-size: 18px;
+}
+
+ol {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+ul {
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+li div:nth-child(2) {
+  flex: 1 0;
+  border-bottom: 1px dotted #727272;
+  height: 1em;
+}
+
+.first-li {
+	border-bottom: 0px;
+}
+
+/*Регистрация и обучение*/
+
+.learning {
+	padding: 60px 0px;
+	background: url(../images/learning.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.learning p {
+	font-size: 18px;
+	line-height: 26px;
+	margin-bottom: 17px;
+}
+
+.learning b {
+	font-size: 18px;
+}
+
+.cost {
+	color: #ce3b35;
+}
+
+.button {
+	background-color: #ce3b35;
+	color: #fff;
+	font-size: 18px;
+	padding: 12px 17px;
+	display: inline-block;
+	margin-top: 19px;
+}
+
+.button:hover {
+    background-color: #c53630;
+}
+
+.button a {
+	color: #fff;
+}
+
+.button a:hover {
+	text-decoration: none;
+}
+
+/*Подвал*/
+
+.footer {
+	height: auto;
+	background-color: #333333;
+	color: white;
+	font-size: 16px;
+	padding: 50px 0px;
+	margin: 0 auto;
+}
+
+.footer a {
+	color: white;
+	line-height: 30px;
+}
+
+.icon-social {
+	text-align: center;
+}
+
+.icon-social img {
+	padding: 0px 1px;
+}
+
+.location {
+	text-align: center;
+	color: #d1d3d4;
+	padding-top: 15px;
+}
+
+
+@media screen and (max-width: 480px) { 
+	
+	/*Шапка*/
+    
+	.logo img {
+		display: inline-block;
+		max-width: 100%;
+	}
+	
+	.logo {
+		width: 45%;
+		padding: 5.5% 0%;
+		padding-left: 15px;
+	}
+	
+	.header {
+		height: auto;
+	}
+	
+	/*Логотип*/
+	.contacts {
+		display: none;
+	}
+	
+	/*Первый экран*/
+
+.first-section {
+	background: url(../images/background.jpg) no-repeat center;
+	background-size: cover;
+	padding: 60px 0px;
+}
+
+.first-section img {
+	max-width: 100%;
+}
+
+.mercury {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/*Кому*/
+
+.caption {
+	font-size: 35px;
+	text-transform: uppercase;
+    font-family: "ProximaNovaBold";
+	border-left: 6px solid #ce3b35;
+	height: auto;
+	padding-left: 11px;
+	margin: 50px 15px;
+}
+
+.who-calumn-img  img {
+	max-width: 90%;
+}
+
+	.for-phone-calumn {
+		margin-bottom: 33px;
+	}
+	
+	.for-phone-calumn:last-child {
+		margin-bottom: 0px;
+	}
+	
+	hr {
+		margin: 50px 0px;
+	}
+
+/*Когда, Подключение*/
+	
+.for-phone-service {
+	margin-left: 0px;
+	display: block;
+}
+	
+.caption-service {
+	font-size: 35px;
+	text-transform: uppercase;
+    font-family: "ProximaNovaBold";
+	border-left: 6px solid #ce3b35;
+	height: auto;
+	padding-left: 11px;
+    margin: 30px 0px;
+}
+
+.when {
+	margin-bottom: 50px;
+}
+	
+.service p {
+		margin-bottom: 0px;
+	}
+
+/*Штрафы*/
+
+
+ul li,
+ol li {
+  list-style: none;
+}
+
+ol li {
+  display: block;
+  justify-content: space-between;
+  border: 2px solid #ce3b35;
+  padding: 13px 17px;
+  font-size: 18px;
+}
+
+ol {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+ul {
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-bottom: 0px;
+}
+
+li div:nth-child(2) {
+  flex: 1 0;
+  border-bottom: 4.5px dotted #fff;
+  height: 0em;
+}
+
+/*Регистрация и обучение*/
+
+.learning {
+	padding: 20px 0px 50px 0px;
+	background: url(../images/learning.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.learning p {
+	font-size: 18px;
+	line-height: 26px;
+	margin-bottom: 17px;
+}
+
+.learning b {
+	font-size: 18px;
+}
+	
+	.for-phone-caption-learning {
+		margin-left: 15px;
+	}
+
+	
+/*Подвал*/
+
+.footer {
+	height: auto;
+	background-color: #333333;
+	color: white;
+	font-size: 16px;
+	padding: 35px 0px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.footer a {
+	color: white;
+	line-height: 30px;
+}
+
+.icon-social {
+	text-align: center;
+}
+
+.icon-social img {
+	padding: 0px 1px;
+}
+
+.location {
+	text-align: center;
+	color: #d1d3d4;
+	padding-top: 15px;
+}
+		
+}
+
+@media only screen and (min-device-width : 319px) and (max-device-width : 370px) {
+
+	.caption {
+		font-size: 28px;
+	}
+	
+	.caption-service {
+		font-size: 28px;
+	}
+	
+}
+	
+
+
+@media screen and (max-width: 767px) {
+    .masonry[data-columns]::before {
+        content: '1 .col-xs-12';
+    }
+	
+	
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+	
+	.navbar-nav li {
+		display: none;
+	}
+	
+		/*Первый экран*/
+
+.first-section {
+	background: url(../images/background.jpg) no-repeat center;
+	background-size: cover;
+	padding: 80px 0px;
+}
+
+.first-section img {
+	max-width: 100%;
+}
+
+.mercury {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/*Кому*/
+
+.caption {
+	font-size: 35px;
+	text-transform: uppercase;
+    font-family: "ProximaNovaBold";
+	border-left: 6px solid #ce3b35;
+	height: auto;
+	padding-left: 11px;
+	margin: 50px 15px;
+}
+
+.who-calumn-img  img {
+	max-width: 90%;
+}
+
+	.for-tablet {
+		margin-bottom: 38px;
+	}
+	
+	.for-phone-calumn:last-child {
+		margin-bottom: 0px;
+	}
+	
+	hr {
+		margin: 50px 0px;
+	}
+	
+	.for-tablet-service {
+		display: block;
+	}
+	
+	.caption-service {
+		margin: 30px 0px;
+	}
+	
+	.service p {
+		margin-bottom: 0px;
+	}
+	
+	.when {
+		margin-bottom: 50px;
+	}
+	
+
+/*Подвал*/
+
+.footer {
+	height: auto;
+	background-color: #333333;
+	color: white;
+	font-size: 16px;
+	padding: 35px 0px;
+	margin: 0 auto;
+}
+
+
+.location {
+	text-align: center;
+	color: #d1d3d4;
+	padding-top: 15px;
+	display: block;
+}
+	
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+	
+	/*Шапка*/
+	
+	.navbar-default .navbar-nav > li > a {
+    color: #000000;
+    font-size: 15px;
+    font-family: "ProximaNovaRegular";
+	padding-left: 10px;
+}
+
+	.logo {
+		max-width: 80%;
+		  padding: 28px 0px 28px 15px;
+	}
+	
+	
+		/*Первый экран*/
+
+.first-section {
+	background: url(../images/background.jpg) no-repeat center;
+	background-size: cover;
+	padding: 80px 0px;
+}
+
+.first-section img {
+	max-width: 100%;
+}
+
+.mercury {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+	
+	/*Кому*/
+
+.caption {
+	font-size: 35px;
+	text-transform: uppercase;
+    font-family: "ProximaNovaBold";
+	border-left: 6px solid #ce3b35;
+	height: auto;
+	padding-left: 11px;
+}
+
+.who-calumn-img  img {
+	max-width: 90%;
+}
+
+	.for-tablet {
+		margin-bottom: 38px;
+	}
+
+	.for-tablet-service {
+		display: block;
+	}
+	
+		.caption-service {
+		margin: 30px 0px;
+	}
+	
+	.service p {
+		margin-bottom: 0px;
+	}
+	
+/*Подвал*/
+
+.footer {
+	height: auto;
+	background-color: #333333;
+	color: white;
+	font-size: 16px;
+	padding: 35px 0px;
+	margin: 0 auto;
+}
+
+
+.location {
+	text-align: center;
+	color: #d1d3d4;
+	padding-top: 15px;
+	display: block;
+}
+	
+
+}
+
+@media screen and (min-width: 1200px) {
+
+}
